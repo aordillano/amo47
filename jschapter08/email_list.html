@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Join Email List</title>
+    </head>
+    <body>
+        <main>
+            <h1>Please join our email list: </h1>
+            <form id="email_form" name="email_form" action="join.php" method="get">
+                <label>Email Address: </label>
+                <input type="email" id="email" name="email" />
+                <span>*</span>
+                <br>
+                <input type="submit" id="submit_button" value="Join List" />
+                <input type="reset" id="reset_button" value="Clear Form" />
+            </form>
+            <!-- Copy pasted from releases.jquery.com -->
+            <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" 
+            integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" 
+            crossorigin="anonymous"></script>
+            <!-- Code from class starting here -->
+            <script src="email_list.js"></script>
+            
+        </main>
+    </body>
+</html>

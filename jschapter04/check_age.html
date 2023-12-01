@@ -1,0 +1,29 @@
+<html>
+    <body>
+        <form action="process.php" method="get">
+            <label>Age: </label>
+            <input type="text" name="age" id="age">
+            <input type="submit" id="submit_button">
+        </form>
+        <script>
+            const joinList = event => {
+                const ageElement = document.querySelector("#age");
+                const age = parseFloat(ageElement.value);
+                if (isNaN(age) || age <= 0) {
+                    // notify user of error
+                    alert("Age is invalid.");
+                    // don't allow form to be submitted
+                    event.preventDefault();
+                }
+            }
+            document.addEventListener(
+                "DOMContentLoaded", () => {
+                    document.querySelector("#submit_button").addEventListener(
+                        "click", 
+                        joinList
+                    );
+                }
+            );
+        </script>
+    </body>
+</html>

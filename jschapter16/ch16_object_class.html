@@ -1,0 +1,74 @@
+<html>
+    <body>
+        <script>
+            class Invoice {
+                constructor(subtotal, taxRate) {
+                    this.subtotal = subtotal;
+                    this.taxRate = taxRate;
+                }
+                getTotal() {
+                    const salesTax = this.subtotal * this.taxRate;
+                    return this.subtotal + salesTax;
+                }
+            }
+
+            const invoice1 = new Invoice(100, 0.0875);
+            total1 = invoice1.getTotal();
+            document.write(total1);
+            document.write("<br>");
+            const invoice2 = new Invoice(50, 0.07);
+            let total2 = invoice2.getTotal();
+            document.write(total2);
+            document.write("<br>");
+
+            class Person {
+                constructor(firstName, lastName) {
+                    this.firstName = firstName;
+                    this.lastName = lastName;
+                }
+                get fullName() {
+                    return `${this.firstName} ${this.lastName}`;
+                }
+            }
+
+            const person = new Person("Grace", "Hopper");
+            document.write(person.fullName);
+            document.write("<br>");
+            document.write(person instanceof Object);
+            document.write("<br>");
+            document.write(person instanceof Person);
+            document.write("<br>");
+
+            class Employee extends Person {
+                constructor(firstName, lastName, hireDate) {
+                    super(firstName, lastName);
+                    this.hireDate = hireDate;
+                }
+            }
+            const emp = new Employee("Brad", "Pitt", new Date("11/01/2023"));
+            document.write(emp.fullName);
+            document.write("<br>");
+            document.write(emp.hireDate.toDateString());
+            document.write("<br>");
+
+            // Slide 49
+            const taxDay = new Date("4/15/2021");
+            document.write(taxDay.toDateString());
+            document.write("<br>");
+
+            Date.prototype.toNumericDateString = function() {
+                const month = this.getMonth() + 1;
+                const day = this.getDate();
+                const year = this.getFullYear();
+                return month + "/" + day + "/" + year;
+            }
+
+            document.write(taxDay.toNumericDateString());
+            document.write("<br>");
+
+            // Slide 50: add property to an instance of a Date type
+            taxDay.hasExtensions = true;
+            document.write(taxDay.hasExtensions);
+        </script>
+    </body>
+</html>

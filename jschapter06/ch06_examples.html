@@ -1,0 +1,91 @@
+<html>
+    <body>
+        <span><b>Welcome </b><u>Back</u> <i>Sam!</i></span>
+        <script>
+            // Slide 8
+            const span = document.querySelector("span");
+            console.log("span = " + span);
+
+            const boldElement = span.firstChild;
+            // when concatenated with a string, it puts into string
+            // the type of object it is
+            console.log("bold element = " + boldElement);
+            // by itself, you can see what's actually inside the element
+            console.log(boldElement);
+            console.log("bode element.nodeValue = " + boldElement.nodeValue);
+            const boldElementText = span.firstChild.firstChild;
+            console.log("bold text = " + boldElementText);
+            console.log("bold text.nodeValue = " + boldElementText.nodeValue);
+
+            const underlinedElement = span.firstChild.nextElementSibling;
+            console.log("underlined element = " + underlinedElement);
+            console.log(underlinedElement);
+            const underlinedElementText = span.firstChild.nextElementSibling.firstChild;
+            console.log("underlined text = " + underlinedElementText);
+            console.log("underlined text.nodeValue = " + underlinedElementText.nodeValue);
+            
+            const italicElement = span.lastChild;
+            console.log("last child = " + italicElement);
+            const italicElementText = span.lastChild.firstChild;
+            console.log("italic element.nodeValue" + italicElementText.nodeValue);
+
+            // nodeValue only works with text elements within an html element
+            // textContent returns all of the text, including child nodes
+
+            const spanText = span.textContent;
+            console.log("span textContent = " + span.textContent);
+            console.log("-- Changing text --");
+            span.firstChild.textContent = "Hurry ";
+
+            span.textContent = "JavaScript and JQuery Chapter 6 Examples";
+            console.log(span);
+        </script>
+
+        <!-- Slide 13 -->
+        <ul id="image_list">
+            <li>
+                <img id="imageA" src="lion.jpg" width="160" height="106" />
+            </li>
+            <li>
+                <img id="imageB" src="tiger.jpg" width="160" height="106" />
+            </li>
+            <li>
+                <img id="imageC" src="lion.jpg" width="160" height="106" />
+            </li>
+        </ul>
+        <script>
+            const list = document.querySelector("#image_list");
+            const items = list.querySelectorAll("li");
+            for (let item of items) {
+                let imageElement = item.firstChild;
+                console.log("item id = " + imageElement.id);
+                console.log("item src = " + imageElement.src);
+            }
+
+            // Slide 17
+            const imageCElement = document.querySelector("#imageC");
+            console.log("image c src = " + imageCElement.getAttribute("src"));
+            imageCElement.setAttribute("src", "puma.jpg");
+        </script>
+
+        <!-- Slide 21 Embedded CSS -->
+        <style>
+            .blue{
+                color: blue;
+            }
+            .red {
+                color: red;
+            }
+        </style>
+        <!-- HTML Element -->
+        <h2>Welcome to our website!</h2>
+        <script>
+            // JavaScript class attribute changes
+            const heading2 = document.querySelector("h2");
+            heading2.classList.add("blue");
+            heading2.classList.replace("blue", "red");
+            heading2.classList.remove("red");
+            console.log(heading2);
+        </script>
+    </body>
+</html>

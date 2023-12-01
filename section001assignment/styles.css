@@ -1,0 +1,189 @@
+/* Alieyah Ordillano, 10/06/2023, IT 202-001, Section 001 Unit 003 Assignment, amo47@njit.edu */
+* {
+    /*For the whole webpage*/
+    color: #9950de;
+    background-color: #F3F1F5;
+}
+html {
+    /*To make scrolling seamless*/
+    height: 90%;
+}
+#north_star_1 {
+    /*Icon on the left*/
+    float: left;
+    margin-left: 23em;
+}
+#north_star_2 {
+    /*Icon on the right*/
+    float: right;
+    margin: -4.9em 22.8em 0em 0em;
+}
+h1 {
+    /*For the name of the shoe brand*/
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    height: 35px;
+    width: 350px;
+    margin: auto;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    padding: 0.25em;
+    text-align: center;
+    border: solid thick #7F7C82;
+}
+h2 {
+    /*For the address in the header and subheadings*/
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    height: 6%;
+    width: 500px;
+    margin: auto;
+    text-align: center;
+}
+h3 {
+    /*For small titles on the home page*/
+    font-family: Verdana, sans-serif;
+    margin-bottom: 0em;
+}
+h5 {
+    /*For the footer*/
+    font-family: Open Sans, sans-serif;
+    margin: 2em;
+}
+body {
+    /*For everything else but the header and footer*/
+    font-family: Open Sans, sans-serif;
+    padding: 0.5em;
+    border: 5px thick ;
+}
+main {
+    /*For everything else besides header, footer, and nav*/
+    font-family: Open Sans, sans-serif;
+    margin: 1em;
+    padding: 0em 0.75em 0em 0.75em;
+}
+p {
+    /*For brand description, product names, and subheaders on the shipping page*/
+    font-family: Open Sans, sans-serif;
+    padding: 0.75em;
+    border: 3px dashed #BFA2DB;
+    background-color: #F0D9FF;
+    margin-bottom: 1em;
+    color: darkorchid;
+}
+div {
+    /*For products, shipping input, and shipping label output*/
+    float: left;
+    margin: 0.5em;
+    padding: 0.25em;
+}
+#shipping_page {
+    /*To adjust shipping page input contents to the left*/
+    margin-left: 1em;
+}
+.shipping_label {
+    /*To standardize some styles for the shipping label*/
+    border: 3px solid black;
+    margin: 0em;
+    padding: 0.25em;
+    width: 380px;
+    color: black;
+    background-color: white !important;
+}
+#logo {
+    /*For the P on the shipping label*/
+    border-right: 0px;
+    border-bottom: 0px;
+    padding: 0.15em 0em 0em;
+    width: 77px;
+    height: 76px;
+    font-size: 50;
+    font-weight: bold;
+    margin: auto;
+    text-align: center;
+}
+#package_info { 
+    /*For the package info on the top right*/
+    border-bottom: 0px;
+    width: 300px;
+    height: 75px;
+}
+#shipping_info {
+    /*For the "USPS Priority Mail" part*/
+    clear: both;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20;
+    width: 378px;
+}
+#to_and_from {
+    /*For the to and from addresses at the center of the label*/
+    clear: both;
+    height: 200px;
+    border-top: 0px;
+    border-bottom: 0px;
+}
+#barcode {
+    /*For the tracking number and barcode image*/
+    clear: both;
+}
+#second_h2 {
+    /*For '...And for all occasions!' subheader*/
+    clear: both;
+}
+footer {
+    /*To put the footer at the bottom*/
+    clear: both;
+}
+nav {
+    /*For the navigation menu*/
+    font-size: 20;
+    margin-left: 1.5em;
+}
+/*For the links*/
+a[href] {
+    background-color: #F0D9FF;
+    color: #1a4da5;
+    font-family: Open Sans, sans-serif;
+}
+a:link {
+    color: #1a4da5;
+}
+a:visited {
+    color: #2e043f;
+}
+a:hover {
+    color: #0fd2d2;
+}
+a:active {
+    color: rgb(46, 197, 119);
+}
+/*For the table*/
+nav ul li {
+    /*For the categories links */
+	display: inline;
+}
+a {
+    /*For the categories links */
+    padding: 7px;
+}
+table {
+    /*For the table*/
+    margin: auto;
+}
+td {
+    /*For each cell in the table*/
+    border: 1px solid black;
+    padding: .2em .5em .2em .5em;
+}
+/*.shoe_link {
+    font-family: Open Sans, sans-serif;
+    color: darkorchid;
+    padding: .2em .5em .2em .5em;
+}*/
+form label {
+    /*For the content in each cell*/
+    width: 6em;
+    float: left;
+}
+br {
+    clear: left;
+}

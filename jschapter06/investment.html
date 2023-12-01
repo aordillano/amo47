@@ -1,0 +1,45 @@
+<html>
+    <body>
+        <form>
+            <label>Investment Amount: </label>
+            <input type="text" name="investment" id="investment" />
+            <br>
+            <label>Interest Rate: </label>
+            <input type="text" name="interest_rate" id="interest_rate" value="6.5%"/>
+            <br>
+            <label>Years: </label>
+            <input type="text" name="years" id="years" />
+            <br>
+            <input type="submit" />
+        </form>
+        <script>
+            const investmentChange = () => {
+                const investmentElement = document.querySelector("#investment");
+                console.log("investment = " + investmentElement.value);
+            }
+
+            const yearsDblClick = () => {
+                const yearsElement = document.querySelector("#years");
+                console.log("years = " + yearsElement.value);
+            }
+
+            document.addEventListener(
+                "DOMContentLoaded",
+                () => {
+                    // change is when you leave the input field /
+                    // when your cursor is somewhere else
+                    document.querySelector("#investment").addEventListener(
+                        "change",
+                        investmentChange
+                    );
+                    document.querySelector("#interest_rate").disabled = true;
+                    document.querySelector("#years").addEventListener(
+                        "dblclick",
+                        yearsDblClick
+                    );
+                    document.querySelector("#years").focus();
+                }
+            );
+        </script>
+    </body>
+</html>

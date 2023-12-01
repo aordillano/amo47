@@ -1,0 +1,67 @@
+/* Alieyah May Ordillano, 09/22/2023, IT 202-001, Unit 3 In-Class Exercise, amo47@njit.edu */
+h1 {
+    font-family: 'Times New Roman', serif;
+    margin: 0.5em 0em 1em 4em;
+    width: 485px;
+    height: 50px;
+    padding: 0.25em 0em 0em 1em;
+    border: 3px solid black;
+}
+h2 {
+    font-family: Verdana, sans-serif;
+    width: 350px;
+    height: 6%;
+    padding-left: 0.55em;
+    margin: -0.4em 0em 0em 1em;
+    border: thin solid black;
+}
+h3 {
+    margin-bottom: -0.5em;
+}
+body {
+    font-family: Helvetica, sans-serif;
+    width: 95%;
+    height: 90%;
+    margin: 1.5em;
+    padding: 0.25em;
+    border: 5px double gray;
+}
+img {
+    float: left;
+    margin: -1em 0em 0em 1em;
+}
+main {
+    margin: 0em 1em 0em 1em;
+    width: 95%;
+    height: 55%;
+    padding: 0em 0.75em 0em 0.75em;
+}
+a[href] {
+    font-family: Helvetica, sans-serif;
+}
+a:link {
+    color: #1a4da5;
+}
+a:visited {
+    color: #ff9812;
+}
+a:hover {
+    color: #d20f14;
+}
+a:active {
+    color: rgb(28, 118, 28);
+}
+#first {
+    background-color: #fff1a2;
+    width: 125px;
+}
+.details {
+    background-color: #f8e1e1;
+}
+p {
+    padding: 0.5em;
+    border: thin dotted gray;
+}
+h5 {
+    margin: 1.5em 2em 0em 2em;
+}

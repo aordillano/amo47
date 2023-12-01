@@ -1,0 +1,26 @@
+<html>
+    <body>
+        <form id="email_form" name="email_form" action="join.php" method="get">
+            <label>Email Address: </label>
+            <input type="email" id="email_address" name="email_address" required autofocus />
+            <!-- autofocus automatically puts cursor in indicated textbox -->
+            <!-- required makes input field required and checks for empty input -->
+            <br>
+            <labeL>Name: </labeL>
+            <input type="text" id="name" name="name" required />
+            <br>
+            <label>Phone Number: </label>
+            <input type="tel" id="phone" name="phone" placeholder="999-999-9999" 
+            pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Must be 999-999-9999" required />
+            <!-- 
+                pattern is a specific way of field validation; it specifies the range 
+                of characters you're accepting in the format you want it and how long 
+                it should be
+                title shows up with the complaint if the user's input doesn't match
+                the regular pattern
+            -->
+            <br>
+            <input type="submit" id="join_list" value="Join Our List" />
+        </form>
+    </body>
+</html>

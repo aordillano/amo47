@@ -1,0 +1,77 @@
+<html>
+    <body>
+        <h1>JavaScript and JQuery Chapter 2 Examples</h1>
+        <!-- Slide 8 -->
+        <noscript>
+            <h2>Please enable JavaScript in your browser.</h2>
+        </noscript>
+        <script>
+            document.write("JavaScript enabled.");
+            // Slide 26
+            let name = "Joseph"; // string value of "Joseph"
+            console.log("name = " + name);
+            let age = 50; // integer value of 50
+            age = age + 1;
+            age += 1;
+            age++;
+            console.log("age = " + age);
+
+            // Slide 27
+            const count = 1;
+            // count = count + 1; // TypeError
+            console.log("count = " + count);
+            
+            // Slide 29
+            console.log("val1 = " + val1);
+            var val1 = "value one";
+            // console.log("val2 = " + val2); //ReferenceError
+            let val2 = "value two";
+
+            // Slide 34
+            const width = 4.25;
+            console.log("width = " + width);
+            const length = 8.5;
+            console.log("length = " + length);
+            const perimeter = (2 * width) + (2 * length);
+            console.log("perimeter " + perimeter);
+
+            // Slide 37: floating-point issue
+            const subtotal = 74.95;
+            const salesTax = subtotal * 0.1;
+            console.log("salesTax = " + salesTax);
+            // one possible solution
+            console.log("salesTax = " + salesTax.toFixed(14));
+            // toFixed() converts it to string; parseFloat or parseInt fixes that
+            console.log("salesTax = " + parseFloat(salesTax.toFixed(14)));
+
+            // Slide 40
+            const firstName = "Grace", lastName = "Hopper";
+            // concatenate using the + operator
+            const fullName = lastName + ", " + firstName;
+            console.log(fullName);
+            // concatenate with template literal
+            const fullName2 = `${lastName}, ${firstName}`;
+            console.log(fullName2);
+
+            // Slide 47
+            window.alert("This is a test of the alert method.");
+
+            // Slide 48
+            const userEntry = window.prompt("This is a test of the prompt method.", 100);
+            // the 100 in the second parameter helps in giving the user an idea of what data type to put
+
+            // Slide 49
+            alert(window.location); // displays path
+
+            // Slide 51
+            let entryA = prompt("Enter any value", 12345.678);
+            entryA = parseInt(entryA);
+            alert(entryA);
+
+            // Slide 53
+            const today = new Date();
+            document.write("<br>");
+            document.write(today.toDateString());
+        </script>
+    </body>
+</html>

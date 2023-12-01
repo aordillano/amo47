@@ -1,0 +1,28 @@
+<html>
+    <body>
+        <script>
+            // Slide 5: object literal
+            const invoice = {
+                taxRate: 0.0875,        //property
+                getTotal(subtotal) {    //method
+                    const salesTax = subtotal * this.taxRate;
+                    return subtotal + salesTax;
+                },
+                terms: {
+                    dueDays: 30,
+                    description: "Net due 30 days"
+                },
+                getTax: function(subtotal) {
+                    return subtotal * this.taxRate;
+                }
+            };
+            const total = invoice.getTotal(100);
+            document.write(total);
+            document.write("<br>");
+            document.write(invoice.terms.dueDays);
+            document.write("<br>");
+            document.write(invoice.getTax(50));
+            document.write("<br>");
+        </script>
+    </body>
+</html>
